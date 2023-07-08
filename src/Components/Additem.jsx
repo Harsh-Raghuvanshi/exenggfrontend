@@ -36,7 +36,7 @@ const Additem = () => {
 
   const callAvailablePage = async () => {
     try {
-      const response = await fetch("/profileb", {
+      const response = await fetch("https://exenggbackend.onrender.com/profileb", {
         method: "GET",
         headers: {
           Accept: "application/json",
@@ -81,7 +81,7 @@ const Additem = () => {
       formData.append("price", price);
       formData.append("image", image);
 
-      const response = await fetch("/additemb", {
+      const response = await fetch("https://exenggbackend.onrender.com/additemb", {
         method: "POST",
         body: formData,
       });

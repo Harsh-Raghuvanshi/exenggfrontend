@@ -32,7 +32,7 @@ const Aboutuser = () => {
 
   const callAvailablePage = async () => {
     try {
-      const response = await fetch("/profileb", {
+      const response = await fetch("https://exenggbackend.onrender.com/profileb", {
         method: "GET",
         headers: {
           Accept: "application/json",

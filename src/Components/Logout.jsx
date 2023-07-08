@@ -4,7 +4,7 @@ const Logout = () => {
   const navigate = useNavigate();
   const callAvailablePage = async () => {
     try {
-      const response = await fetch("/logoutb", {
+      const response = await fetch("https://exenggbackend.onrender.com/logoutb", {
         method: "GET",
         headers: {
           Accept: "application/json",

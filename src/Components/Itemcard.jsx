@@ -8,7 +8,7 @@ const Itemcard = (props) => {
 
   const removetheitem = async () => {
     try {
-      const response = await fetch(`/removeitemb/${props._id}`, {
+      const response = await fetch(`https://exenggbackend.onrender.com/removeitemb/${props._id}`, {
         method: "GET",
         headers: {
           Accept: "application/json",

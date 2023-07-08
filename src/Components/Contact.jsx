@@ -25,7 +25,7 @@ const Contact = () => {
     try {
       event.preventDefault();
       let { name, email, feedback } = registerdata;
-      const response = await fetch("/contactb", {
+      const response = await fetch("https://exenggbackend.onrender.com/contactb", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",

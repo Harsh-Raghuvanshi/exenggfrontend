@@ -9,7 +9,7 @@ const Available = (props) => {
 
   const callAvailablePage = async () => {
     try {
-      const response1 = await fetch("/profileb", {
+      const response1 = await fetch("https://exenggbackend.onrender.com/profileb", {
         method: "GET",
         headers: {
           Accept: "application/json",
@@ -20,7 +20,7 @@ const Available = (props) => {
       let data1 = await response1.json();
       set_data(data1);
 
-      const response = await fetch("/availableb", {
+      const response = await fetch("https://exenggbackend.onrender.com/availableb", {
         method: "GET",
         headers: {
           Accept: "application/json",

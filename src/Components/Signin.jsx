@@ -25,7 +25,7 @@ const Signin = () => {
       event.preventDefault();
       let { email, password } = logindata;
       
-      const response = await fetch("/signinb", {
+      const response = await fetch("https://exenggbackend.onrender.com/signinb", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",

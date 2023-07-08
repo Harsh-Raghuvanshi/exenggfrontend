@@ -31,7 +31,7 @@ const Signup = () => {
       event.preventDefault();
       let { name, email, phone, password, confirmpassword } = registerdata;
 
-      const response = await fetch("/signupb", {
+      const response = await fetch("https://exenggbackend.onrender.com/signupb", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
