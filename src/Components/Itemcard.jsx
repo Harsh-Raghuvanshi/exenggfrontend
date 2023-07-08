@@ -12,7 +12,7 @@ const Itemcard = (props) => {
         method: "GET",
         headers: {
           Accept: "application/json",
-          "Content-Type": "appication/json",
+          "Content-Type": "application/json",
         },
         credentials: "include",
       });
