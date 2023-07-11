@@ -5,22 +5,24 @@ const Home = () => {
   let [toshow, set_toshow] = useState(true);
   const callAvailablePage = async () => {
     try {
-      const response = await fetch("https://exenggbackend.onrender.com/profileb", {
-        method: "GET",
-        headers: {
-          Accept: "application/json",
-          "Content-Type": "application/json",
-        },
-        credentials: "include",
-      });
-      
+      const response = await fetch(
+        "https://exenggbackend.onrender.com/profileb",
+        {
+          method: "GET",
+          headers: {
+            Accept: "application/json",
+            "Content-Type": "application/json",
+            Authorization: `Bearer ${localStorage.getItem("jwtoken")}`, // Include the token in the Authorization header
+          },
+          credentials: "include",
+        }
+      );
 
       if (response.status === 200) {
         set_toshow(false);
       }
     } catch (err) {
       console.log(err);
-  
     }
   };
 

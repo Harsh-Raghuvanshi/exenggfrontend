@@ -32,7 +32,7 @@ const Signin = () => {
         },
         body: JSON.stringify({ email, password }),
       });
-      const data = response;
+      const data = await response.json();
       if (data.status === 422 || !data) {
         window.alert("Please fill VALID details");
         console.log("Login Failed");
